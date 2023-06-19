@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans',
+    sans-serif;
+}
+body{
+  background: black;
+}
+h1,h4,p,a{
+  color:#2A925E;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.btn{
+  padding: 12px 32px;
+  font-size: 10px;
+  text-transform: uppercase;
+  background:green;
+  color:black;
+  border:1px solid #fff;
+  cursor:pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-light{
+  background: transparent;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn:hover{
+  background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
