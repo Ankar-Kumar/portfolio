@@ -1,7 +1,7 @@
 import React from 'react'
 import './AboutContent.css'
 import { Link } from 'react-router-dom'
-
+import resume from './resume.pdf'
 function AboutContent() {
   return (
 		<div className='about'>
@@ -11,7 +11,7 @@ function AboutContent() {
 					I am a CSE 4th year student. Currently, I am learning Blockchain
 					developing
 				</p>
-				<Link to='' target='_blank' download>
+				<Link to={resume} target='_blank' download>
 					<button className='btn'>Resume</button>
 				</Link>
 			</div>
